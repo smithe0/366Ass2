@@ -1,0 +1,21 @@
+Assignment 2 Part 1 Why Questions
+
+Authors:
+Eric Smith
+Peter Sterling
+
+The second tiling will run from numbers 121 to 241 because each tiling is 11 by 11 squares so the first one must include all indices 
+between zero and 120 (121 or 11^2 indices). The second tiling has the same number starting from the end of the last.
+
+The first index in each tiling is equal to zero (the smallest index in our current tiling) plus 121 times the number of tilings before
+this one (based on our numbering scheme the first tile of each tiling is one more than the end of the last).
+
+In the example with (x=0.1, y=0.1) as the input, the coordinates in the eighth tiling lands in the 13th square because for each tiling the
+coordinate values are offset by one eighth of a tile. Seven offsets (as in the eighth tiling) of 0.6/8 plus 0.1 pushes both the x and y 
+values into the next tile up and to the right thus landing in the 13th tile.
+
+The final index value of the 13th tile in the 8th tiling is 859. This is because in the eigth tiling you add 121 times the tiling number 
+(zero indexed so the eigth tiling adds 7 time 121) and add the tile number relative to the current tiling.
+
+The highest possile tile index is 967 because it is equal to (121 * 8) -1. 121 for in each tiling, then minus one for starting with an 
+index of zero.
