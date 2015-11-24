@@ -14,7 +14,6 @@ def tilecode(x,y,tileIndices):
         tileIndices[i] = index
         x=x+offset; y=y+offset
     
-    
 def printTileCoderIndices(x,y):
     tileIndices = [-1]*numTilings
     tilecode(x,y,tileIndices)
