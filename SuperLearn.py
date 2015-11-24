@@ -6,9 +6,11 @@ from Tilecoder import numTilings, tilecode
      # initialize your global list of tile indices here
     
 def f(x,y):
+    
     # write your linear function approximator here (5 lines or so)
    
 def learn(x,y,target):
+    pass
     # write your gradient descent learning algorithm here (3 lines or so)
 
 def test1():
